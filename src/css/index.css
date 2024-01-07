@@ -2,4 +2,223 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  color: #fafafa;
+  background-color: #141414 !important;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+}
+
+.secondary_btn {
+  padding: 14px 1.4rem;
+  transition: ease 0.4s;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  background-color: #141414;
+}
+.secondary_btn:hover {
+  color: #fafafa;
+  background-color: #703BF7;
+  border-color: #703BF7;
+  box-shadow: 0 0 20px rgba(112, 59, 247, 0.8), 0 0 40px rgba(112, 59, 247, 0.2);
+}
+
+header nav {
+  width: 100%;
+  background-color: #1A1A1A;
+}
+header nav .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+}
+header nav .navigation .logo_container {
+  display: flex;
+  align-items: center;
+}
+header nav .navigation .logo_container img {
+  width: 40px;
+}
+header nav .navigation .logo_container h3 {
+  font-size: 1.6rem;
+  margin-left: 10px;
+}
+header nav .navigation .logo_container h3 span {
+  color: #703BF7;
+}
+header nav .navigation .nav_items a {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 12px 0.9rem;
+  transition: ease 0.4s;
+  font-weight: 500;
+  border: 1px solid #1A1A1A;
+}
+@media (max-width: 800px) {
+  header nav .navigation .nav_items a {
+    margin: 0 8px !important;
+    padding: 12px 0.7rem;
+  }
+}
+header nav .navigation .nav_items a:hover {
+  border-radius: 8px;
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  background-color: #141414;
+}
+header nav .navigation .nav_items .active_nav {
+  border-radius: 8px;
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  background-color: #141414;
+}
+header nav .mobile_navigation {
+  display: none;
+}
+@media (max-width: 700px) {
+  header nav .navigation {
+    display: none;
+  }
+  header nav .mobile_navigation {
+    display: flex;
+  }
+  header nav .mobile_nav_items {
+    display: none;
+  }
+  header nav .open_nav {
+    display: flex;
+  }
+}
+
+header .mobile_navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0.9rem 0;
+}
+header .mobile_navigation .logo_container {
+  display: flex;
+  align-items: center;
+}
+header .mobile_navigation .logo_container img {
+  width: 30px;
+}
+header .mobile_navigation .logo_container h3 {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+header .mobile_navigation .logo_container h3 span {
+  color: #703BF7;
+}
+header .mobile_navigation .mobile_nav_items {
+  width: 100%;
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #1A1A1A;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header .mobile_navigation .mobile_nav_items a:not(:last-child) {
+  margin: 0 0.8rem;
+  text-decoration: none;
+  color: #fafafa;
+  padding: 12px 1.2rem !important;
+  transition: ease 0.4s;
+  font-weight: 500;
+  border: 1px solid #1A1A1A;
+}
+@media (max-width: 800px) {
+  header .mobile_navigation .mobile_nav_items a:not(:last-child) {
+    margin: 0 8px !important;
+    padding: 12px 0.7rem;
+  }
+}
+header .mobile_navigation .mobile_nav_items a:not(:last-child):hover {
+  border-radius: 8px;
+  border: 1px solid rgba(153, 153, 153, 0.2) !important;
+  background-color: #141414;
+}
+header .mobile_navigation .mobile_nav_items .active_nav {
+  border-radius: 8px;
+  border: 1px solid rgba(153, 153, 153, 0.2) !important;
+  background-color: #141414;
+}
+header .mobile_navigation .mobile_nav_items a:not(:last-child) {
+  margin-bottom: 10px !important;
+}
+header .mobile_navigation .mobile_nav_items a:last-child {
+  margin-top: 1rem;
+}
+header .mobile_navigation .menu_btn span {
+  transform: rotateY(180deg);
+  font-size: 2rem;
+}
+
+header .banner {
+  width: 100%;
+  background-image: url("../assets/pattern.png"), linear-gradient(266deg, rgba(21, 20, 20, 0.54) 0%, rgba(0, 0, 0, 0.62) 100%);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 0.6rem 0;
+  position: relative;
+}
+@media (max-width: 600px) {
+  header .banner {
+    text-align: left;
+  }
+  header .banner .banner_text {
+    width: 88%;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  header .banner .close {
+    right: 15px !important;
+  }
+}
+header .banner span {
+  color: #fafafa;
+}
+header .banner span a {
+  margin-left: 10px;
+  text-decoration: underline;
+  color: #fafafa;
+}
+header .banner .close {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+header .banner .close span {
+  color: #fff;
+  font-size: 1.1rem;
 }/*# sourceMappingURL=index.css.map */
