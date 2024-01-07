@@ -1,0 +1,213 @@
+header .hero_background{
+      position: relative;
+
+      .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: stretch;
+            height: 100%;
+            min-height: 80vh;
+
+            .left_container {
+                  width: 50%;
+                  display: grid;
+                  padding-right: 1rem;
+                  
+                  .text_container {
+                        align-self: center;
+
+                        .btn_container {
+                              display: inline-block;
+                              margin: 2rem 0;
+
+                              a {
+                                    margin-right: 1rem;
+                              }
+                        }
+
+                        .counter_section {
+                              width: 90%;
+                              display: grid;
+                              grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                              align-items: center;
+                              gap: 20px;
+                              margin-top: 2.5rem;
+
+                              .items {
+                                    border: $border;
+                                    padding: 1rem 1rem;
+                                    background-color: $secondary-color;
+                                    border-radius: 12px;
+
+                                    .count {
+                                          font-size: 2rem;
+                                    }
+                              }
+                        }
+                  }
+            }
+
+            .right_container {
+                  width: 50%;
+                  height: 100%;
+                  position: absolute;
+                  right: 0;
+                  background-color: $secondary-color;
+                  overflow: hidden;
+                  background-image: url("../assets/hero-bg.png");
+                  background-size: cover;
+                  background-position: top right;
+                  display: grid;
+
+                  img {
+                        width: 100%;
+                        align-self: flex-end;
+                  }
+            }
+
+            @media (max-width:800px) {
+                  flex-direction: column-reverse;
+                  padding: 2rem 10px;
+
+                  .left_container {
+                        width: 100% !important;
+                        padding-right: 0 !important;
+                        margin-top: 3rem;
+
+                        .text_container .counter_section {
+                              width: 100% !important;
+                              gap: 10px;
+                              grid-template-areas: 
+                              "item1 item2"
+                              "item3 item3";
+
+                              .items:nth-child(1) {
+                                    grid-area: item1;
+                              }
+
+                              .items:nth-child(2) {
+                                    grid-area: item2;
+                              }
+
+                              .items:nth-child(3) {
+                                    grid-area: item3;
+                              }
+
+                              .text {
+                                    font-size: 0.8rem !important;
+                              }
+                        }
+                  }
+
+                  .right_container {
+                        width: 100% !important;
+                        position: relative !important;
+                        margin: 1rem 0;
+                        border-radius: 10px;
+                        overflow: hidden;
+                  }
+            }
+
+            @media (max-width:600px) {
+                  .left_container {
+                        margin-top: 2rem !important;
+
+                        .btn_container {
+                              display: block !important;
+
+                              a {
+                                    display: block;
+                                    width: 100%;
+                                    text-align: center;
+                                    margin-bottom: 10px;
+                              }
+                        }
+
+                        .counter_section {
+                              .items {
+                                    text-align: center !important;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+header .hero_background {
+      overflow-x: hidden;
+
+      .left_container {
+            position: relative;
+      }
+
+      .rotate_content {
+            position: absolute;
+            top: 15%;
+            left: 90%;
+            z-index: 10;
+
+            #rotate_text {
+                  position: relative;
+                  width: 140px;
+                  height: 140px;
+                  background-color: $primary-color;
+                  border: $border;
+                  border-color: rgba($white-color,0.4);
+                  border-radius: 50%;
+                  padding: 5px;
+                  box-sizing: content-box;
+                  background-image: url("../assets/arrow.png");
+                  background-size: 80px 80px;
+                  background-position: center center;
+                  background-repeat: no-repeat;
+                  cursor: pointer;
+                  animation: rotate 10s linear infinite;
+
+                  &:hover {
+                        animation-play-state: paused;
+                  }
+
+                  span {
+                        position: absolute;
+                        left: 50%;
+                        transform-origin: 0 70px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        font-size: 0.7rem;
+                  }
+            }
+      }
+
+      @media (max-width:800px) {
+            .rotate_content {
+                  left: 2% !important;
+                  top: -40% !important;
+            }
+      }
+
+      @media (max-width:600px) {
+            .rotate_content {
+                  left: 2% !important;
+                  top: -25% !important;
+
+                  #rotate_text {
+                        width: 100px !important;
+                        height: 100px !important;
+                        background-size: 50px 50px;
+                  }
+
+                  span {
+                        transform-origin: 0 50px !important;
+                  }
+            }
+      }
+}
+
+@keyframes rotate {
+      0% {
+            transform: rotate(0deg);
+      }
+      100% {
+            transform: rotate(360deg);
+      }
+}

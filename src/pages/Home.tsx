@@ -1,16 +1,17 @@
-import { FC } from "react";
 import Navbar from "../components/Navbar";
 import Banner from "../components/Banner";
+import HeroBg from "../components/Home/HeroBg";
 
 
-const Home:FC = () => {
+const Home = () => {
       return (
       <>
             <header>
                   <Banner />
                   <Navbar isActive="home" />
+                  <HeroBg />
             </header>
-            <main className="home-main"></main>
+            <main className="home_main"></main>
             <footer></footer>
       </>
       );

@@ -22,11 +22,45 @@ a {
       color: #fafafa;
 }
 
-.secondary_btn {
-      padding: 14px 1.4rem;
+.h1 {
+      font-size: clamp(1.8rem, 3vw, 3rem);
+      font-weight: 600;
+}
+
+.text {
+      font-size: 0.95rem;
+      color: #919191;
+      margin: 1rem 0;
+      line-height: 25px;
+}
+
+.primary_btn {
+      padding: 16px 1.4rem;
       transition: ease 0.4s;
       font-weight: 500;
-      border-radius: 8px;
+      border-radius: 10px;
+      color: #fafafa;
+      border: $border;
+      border-color: $accent-color;
+      background-color: $accent-color;
+      border-color: $accent-color;
+      box-shadow: 
+            0 0 20px rgba($accent-color, 0.8),
+            0 0 40px rgba($accent-color, 0.2);
+      
+      &:hover {
+            // background-color: rgba($accent-color, 0.8);
+            box-shadow: 
+                  0 0 10px rgba($accent-color, 0.8),
+                  0 0 20px rgba($accent-color, 0.2);
+      }
+}
+
+.secondary_btn {
+      padding: 16px 1.4rem;
+      transition: ease 0.4s;
+      font-weight: 500;
+      border-radius: 10px;
       border: $border;
       background-color: $primary-color;
       
@@ -37,6 +71,19 @@ a {
             box-shadow: 
                   0 0 20px rgba($accent-color, 0.8),
                   0 0 40px rgba($accent-color, 0.2);
+      }
+}
+
+.dark_btn {
+      padding: 16px 1.4rem;
+      transition: ease 0.4s;
+      font-weight: 500;
+      border-radius: 10px;
+      border: $border;
+      background-color: $primary-color;
+
+      &:hover {
+            background-color: rgba($white-color, 0.1);
       }
 }
 
@@ -152,6 +199,7 @@ header .mobile_navigation {
             top: 110%;
             left: 0;
             right: 0;
+            z-index: 1000;
             border: $border;
             padding: 2rem;
             border-radius: 10px;
