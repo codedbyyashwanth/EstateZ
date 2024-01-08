@@ -5,6 +5,8 @@ import Features from "../components/Home/Features";
 import FeaturedProperties from "../components/Home/FeaturedProperties";
 import Testimonials from "../components/Home/Testimonials";
 import FAQs from "../components/Home/FAQ";
+import CalltoAction from "../components/Home/CalltoAction";
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -20,8 +22,9 @@ const Home = () => {
                   <FeaturedProperties />
                   <Testimonials />
                   <FAQs />
+                  <CalltoAction />
             </main>
-            <footer></footer>
+            <Footer />
       </>
       );
 }

@@ -64,7 +64,7 @@ const FAQCarousel = (props: { faq: FAQ[]}) => {
                         }
                         <hr />
                   </Swiper>
-                  <a href="#" className="secondary_btn">View All FAQ</a>
+                  <a href="#" className="secondary_btn" style={{marginTop: "1rem"}}>View All FAQ's</a>
             </div>
       );
 }
