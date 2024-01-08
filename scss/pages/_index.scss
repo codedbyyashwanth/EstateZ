@@ -17,7 +17,7 @@ header .hero_background{
                         align-self: center;
 
                         .btn_container {
-                              display: inline-block;
+                              display: flex;
                               margin: 2rem 0;
 
                               a {
@@ -209,5 +209,234 @@ header .hero_background {
       }
       100% {
             transform: rotate(360deg);
+      }
+}
+
+
+.home_main .features_section {
+      padding: 10px;
+      background-color: $secondary-color;
+      width: 100%;
+
+      .features {
+            display: grid;
+            gap: 20px;
+            padding: 10px;
+            background-color: $primary-color;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+            @media (max-width:600px) {
+                  gap: 5px;
+                  padding: 6px;
+                  border: $border;
+                  border-radius: 14px;
+
+                  .items {
+                        padding: 2rem 8px !important;
+
+                        h3 {
+                              font-size: 0.9rem !important;
+                        }
+                  }
+            }
+
+            .items {
+                  padding: 2rem 1rem;
+                  text-align: center;
+                  border-radius: 10px;
+                  border: $border;
+                  background-color: $secondary-color;
+                  position: relative;
+
+                  .icon_container {
+                        width: 70px;
+                        height: 70px;
+                        display: grid;
+                        place-items: center;
+                        margin: 0 auto;
+
+                        img {
+                              width: 100%;
+                        }
+                  }
+
+                  h3 {
+                        font-weight: 500;
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                  }
+
+                  .arrow_link {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        color: rgba($white-color,0.6);
+                        cursor: pointer;
+
+                        span {
+                              user-select: none;
+                              transition: transform ease 0.4s;
+                        }
+
+                        &:hover span {
+                              transform: scale(1.1) translate(3px,-3px);
+                              color: $accent-color;
+                        }
+                  }
+            }
+      }
+}
+
+.carousel_container {
+      .mySwiper {
+            padding: 2rem 0 5rem 0;
+      }
+
+      .swiper-slide {
+            border: $border;
+            padding: 25px ;
+            border-radius: 10px;
+
+            @media (max-width:640px) {
+                  padding: 20px 15px;
+            }
+
+            .img_container {
+                  width: 100%;
+                  height: 250px;
+                  border-radius: 10px;
+                  overflow: hidden;
+
+                  img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                  }
+            }
+
+            .text_container {
+                  margin-top: 1rem;
+
+                  h4 {
+                        font-size: 1.2rem;
+                        font-weight: 500;
+                  }
+
+                  p {
+                        font-size: 0.9rem;
+                        margin: 5px 0 !important;
+                  }
+
+                  p button {
+                        border: none;
+                        background: none;
+                        color: #fafafa;
+                        text-decoration: underline;
+                        cursor: pointer;
+                  }
+
+                  .tags_container {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        margin-top: 1rem;
+
+                        .tag {
+                              padding: 2px 12px;
+                              border: $border;
+                              border-radius: 30px;
+                              background-color: $secondary-color;
+                              display: flex;
+                              align-items: center;
+                              
+                              p {
+                                    font-size: 0.8rem;
+                                    margin-left: 5px !important;
+                              }
+                        }
+                  }
+
+                  .action_container {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        margin-top: 2rem;
+
+                        @media (max-width: 640px) {
+                              a {
+                                    padding: 14px 1rem !important;
+                                    font-size: 0.9rem;
+                              }
+                        }
+                  }
+            }
+      }
+}
+
+.home_main .carousel_container {
+      
+      .swiper-button-next::after, .swiper-button-prev::after {
+            content: "";
+      }
+
+      .swiper-button-next, .swiper-button-prev {
+            width: 50px;
+            height: 50px;
+            border: $border;
+            border-radius: 50%;
+            background-color: $primary-color;
+            background-size: 25px;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+            top: 94% !important;
+      }
+
+      .swiper-button-prev {
+            background-image: url("../assets/left.png") !important;
+            right: 70px !important;
+            left: unset !important;
+
+            @media (max-width:650px) {
+                  right: unset !important;
+                  left: 25% !important;
+            }
+      }
+
+      .swiper-button-next {
+            background-image: url("../assets/right.png") !important;
+
+            @media (max-width:650px) {
+                  right: unset !important;
+                  left: 60% !important;
+            }
+      }
+
+      .swiper-pagination-custom {
+            width: fit-content;
+            top: 92% !important;
+            left: 0 !important;
+
+
+            @media (max-width:650px) {
+                  top: 93% !important;
+                  left: 50% !important;
+                  transform: translateX(-50%);
+            }
+      }
+
+      .secondary_btn {
+            display: none;
+
+            @media (max-width: 650px) {
+                  display: block;
+                  text-align: center;
+            }
+      }
+
+      hr {
+            border: $border;
+            margin-top: 2rem;
       }
 }

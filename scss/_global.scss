@@ -27,6 +27,11 @@ a {
       font-weight: 600;
 }
 
+.h2 {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 500;
+}
+
 .text {
       font-size: 0.95rem;
       color: #919191;
@@ -47,6 +52,10 @@ a {
       box-shadow: 
             0 0 20px rgba($accent-color, 0.8),
             0 0 40px rgba($accent-color, 0.2);
+
+      
+            display: block;
+            text-wrap: nowrap;
       
       &:hover {
             // background-color: rgba($accent-color, 0.8);
@@ -63,6 +72,10 @@ a {
       border-radius: 10px;
       border: $border;
       background-color: $primary-color;
+
+      
+      display: block;
+      text-wrap: nowrap;
       
       &:hover {
             color: #fafafa;
@@ -82,9 +95,18 @@ a {
       border: $border;
       background-color: $primary-color;
 
+      
+      display: block;
+      text-wrap: nowrap;
+
       &:hover {
             background-color: rgba($white-color, 0.1);
       }
+}
+
+section {
+      padding: 5rem 0;
+      overflow-x: hidden;
 }
 
 header nav {
@@ -302,6 +324,45 @@ header .banner {
             span {
                   color: #fff;
                   font-size: 1.1rem;
+            }
+      }
+}
+
+
+.heading_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+
+      .left_container {
+            width: 100%;
+            max-width: 1000px;
+      }
+
+      .right_container {
+            display: inline-block;
+
+            a {
+                  display: block;
+                  text-wrap: nowrap;
+            }
+      }
+
+      .pattern_content {
+            position: absolute;
+            top: -2rem;
+            left: -10px;
+            width: 60px;
+
+            img {
+                  width: 100%;
+            }
+      }
+
+      @media (max-width:650px) {
+            .right_container {
+                  display: none;
             }
       }
 }
