@@ -24,3 +24,8 @@ export type Testimonial = {
             country: string;
       };
 };
+
+export type FAQ = {
+      question: string;
+      answer: string;
+};

@@ -1,4 +1,4 @@
-import { RealEstateProperty, Testimonial } from "./PropTypes";
+import { RealEstateProperty, Testimonial, FAQ } from "./PropTypes";
     
 const realEstateProperties: RealEstateProperty[] = [
       {
@@ -210,7 +210,35 @@ const testimonials: Testimonial[] = [
       }
 ];
 
+const realEstateFAQs: FAQ[] = [
+      {
+        question: "How can I determine the right time to buy a property?",
+        answer: "The right time to buy a property depends on various factors, including market conditions, interest rates, and your personal financial situation. It's advisable to consult with a real estate professional to make an informed decision.",
+      },
+      {
+        question: "What is the importance of a home inspection?",
+        answer: "A home inspection is crucial as it helps identify potential issues with the property. It provides buyers with a comprehensive understanding of the property's condition and can be used to negotiate repairs or adjustments to the sale price.",
+      },
+      {
+        question: "How does the mortgage approval process work?",
+        answer: "The mortgage approval process involves a thorough evaluation of your financial history, credit score, and debt-to-income ratio. Lenders assess your ability to repay the loan and determine the loan amount and interest rate based on this information.",
+      },
+      {
+        question: "What is the significance of location when buying real estate?",
+        answer: "Location is a key factor in real estate. It affects property value, accessibility, and potential for appreciation. Consider factors such as proximity to amenities, schools, and transportation when evaluating a property.",
+      },
+      {
+        question: "Are there tax benefits to owning real estate?",
+        answer: "Yes, there are tax benefits to owning real estate. Homeowners may be eligible for deductions on mortgage interest, property taxes, and certain home-related expenses. Consult with a tax professional for personalized advice.",
+      },
+      {
+        question: "How does the closing process work in a real estate transaction?",
+        answer: "The closing process involves finalizing the real estate transaction. It includes signing legal documents, transferring funds, and officially transferring ownership. Closing typically takes place at a title company or with a real estate attorney.",
+      },
+];
+
 export {
       realEstateProperties,
-      testimonials
+      testimonials,
+      realEstateFAQs
 };

@@ -297,6 +297,11 @@ header .hero_background {
             padding: 25px ;
             border-radius: 10px;
 
+            .dark_btn {
+                  display: inline-block;
+                  margin: 1rem 0 0px 0 !important;
+            }
+
             @media (max-width:640px) {
                   padding: 20px 15px;
             }
