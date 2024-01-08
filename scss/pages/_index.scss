@@ -374,7 +374,7 @@ header .hero_background {
       }
 }
 
-.home_main .carousel_container {
+.carousel_container {
       
       .swiper-button-next::after, .swiper-button-prev::after {
             content: "";
@@ -438,5 +438,46 @@ header .hero_background {
       hr {
             border: $border;
             margin-top: 2rem;
+      }
+}
+
+
+.testimonials_section {
+
+      .secondary_btn {
+            margin-top: 1rem;
+      }
+
+      .testimonial_item {
+            .ratings {
+                  display: flex;
+                  gap: 10px;
+                  margin-bottom: 1rem;
+      
+                  img {
+                        width: 30px;
+                  }
+            }
+      
+            .profile_container {
+                  display: flex;
+                  align-items: center;
+                  margin-top: 2rem;
+      
+                  .img_container {
+                        width: 60px !important;
+                        height: 60px !important;
+                        overflow: hidden !important;
+                        border-radius: 50%;
+                  }
+      
+                  .text_content {
+                        margin-left: 1rem;
+                        p {
+                              margin: 0 !important;
+                              font-size: 0.9rem;
+                        }
+                  }
+            }
       }
 }

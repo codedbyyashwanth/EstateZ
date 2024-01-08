@@ -12,3 +12,15 @@ export type RealEstateProperty = {
       priceUSD: string;
       imageUrl: string;
 };
+
+export type Testimonial = {
+      rating: number;
+      title: string;
+      description: string;
+      testimonialName: string;
+      profilePicUrl: string;
+      location: {
+            city: string;
+            country: string;
+      };
+};

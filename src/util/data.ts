@@ -1,4 +1,4 @@
-import { RealEstateProperty } from "./PropTypes";
+import { RealEstateProperty, Testimonial } from "./PropTypes";
     
 const realEstateProperties: RealEstateProperty[] = [
       {
@@ -75,6 +75,142 @@ const realEstateProperties: RealEstateProperty[] = [
       },
 ];
 
+const testimonials: Testimonial[] = [
+      {
+            rating: 5,
+            title: "Exceptional Service!",
+            description: "I had an amazing experience working with this real estate agency. Their professionalism and attention to detail made the process smooth and stress-free.",
+            testimonialName: "John Doe",
+            profilePicUrl: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "New York",
+                  country: "USA",
+            },
+      },
+      {
+            rating: 4,
+            title: "Dream Home Found",
+            description: "Thanks to the expertise of the team, I found my dream home in a great neighborhood. The entire journey was enjoyable, and I highly recommend their services.",
+            testimonialName: "Alice Johnson",
+            profilePicUrl: "https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "Los Angeles",
+                  country: "USA",
+            },
+      },
+      {
+            rating: 4,
+            title: "Responsive and Professional",
+            description: "The realtors were highly responsive and professional throughout the process. They addressed all my concerns promptly, making the purchase hassle-free.",
+            testimonialName: "Michael Smith",
+            profilePicUrl: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "London",
+                  country: "UK",
+            },
+      },
+      {
+            rating: 5,
+            title: "Fantastic Experience",
+            description: "A fantastic experience from start to finish. The team went above and beyond to ensure I found the perfect property. I couldn't be happier!",
+            testimonialName: "Sophie Turner",
+            profilePicUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "Sydney",
+                  country: "Australia",
+            },
+      },
+      {
+            rating: 4,
+            title: "Great Communication",
+            description: "Communication was excellent throughout the home-buying process. I was kept informed at every stage, and the team was always available to answer my questions.",
+            testimonialName: "David Rodriguez",
+            profilePicUrl: "https://images.unsplash.com/photo-1489980557514-251d61e3eeb6?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "Toronto",
+                  country: "Canada",
+            },
+      },
+      {
+            rating: 4,
+            title: "Smooth Transaction",
+            description: "The entire transaction was smooth and efficient. The real estate experts guided me through each step, ensuring a hassle-free buying experience.",
+            testimonialName: "Emily White",
+            profilePicUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "Berlin",
+                  country: "Germany",
+            },
+      },
+      {
+            rating: 5,
+            title: "Top-Notch Service",
+            description: "Top-notch service from a dedicated team. They listened to my preferences and found me the perfect home. I highly recommend their expertise.",
+            testimonialName: "Daniel Kim",
+            profilePicUrl: "https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "Seoul",
+                  country: "North Korea",
+            },
+      },
+      {
+            rating: 4,
+            title: "Excellent Negotiation Skills",
+            description: "The real estate agents demonstrated excellent negotiation skills, securing a favorable deal for my property. I'm extremely satisfied with their services.",
+            testimonialName: "Maria Rodriguez",
+            profilePicUrl: "https://images.unsplash.com/photo-1544725176-7c40e5a71c5e?q=80&w=1767&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "Barcelona",
+                  country: "Spain",
+            },
+      },
+      {
+            rating: 4,
+            title: "Reliable and Trustworthy",
+            description: "Reliable and trustworthy professionals who guided me through the home-buying process. I appreciate their honesty and commitment to customer satisfaction.",
+            testimonialName: "James Thompson",
+            profilePicUrl: "https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+                  city: "Tokyo",
+                  country: "Japan",
+            },
+      },
+      {
+            rating: 5,
+            title: "Outstanding Support",
+            description: "The support provided by the team was outstanding. They guided me through every step of the selling process, ensuring a seamless experience.",
+            testimonialName: "Emma Davis",
+            profilePicUrl: "https://images.unsplash.com/photo-1528515038361-c1c059a6eff2?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+              city: "Paris",
+              country: "France",
+            },
+      },
+      {
+            rating: 4.5,
+            title: "Efficient and Friendly",
+            description: "Efficient and friendly service from start to finish. The team understood my preferences and found a property that exceeded my expectations.",
+            testimonialName: "Ryan Johnson",
+            profilePicUrl: "https://images.unsplash.com/photo-1499996860823-5214fcc65f8f?q=80&w=1966&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+              city: "Melbourne",
+              country: "Australia",
+            },
+      },
+      {
+            rating: 4,
+            title: "Relocation Made Easy",
+            description: "Relocating to a new city was made easy with the help of this real estate agency. They provided valuable insights and support throughout the process.",
+            testimonialName: "Sophia Lee",
+            profilePicUrl: "https://images.unsplash.com/photo-1498798821241-1f327af804fe?q=80&w=1771&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            location: {
+              city: "Singapore",
+              country: "Singapore",
+            },
+      }
+];
+
 export {
-      realEstateProperties
+      realEstateProperties,
+      testimonials
 };

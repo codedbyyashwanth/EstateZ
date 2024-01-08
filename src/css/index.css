@@ -635,10 +635,10 @@ header .hero_background .rotate_content #rotate_text span {
   }
 }
 
-.home_main .carousel_container .swiper-button-next::after, .home_main .carousel_container .swiper-button-prev::after {
+.carousel_container .swiper-button-next::after, .carousel_container .swiper-button-prev::after {
   content: "";
 }
-.home_main .carousel_container .swiper-button-next, .home_main .carousel_container .swiper-button-prev {
+.carousel_container .swiper-button-next, .carousel_container .swiper-button-prev {
   width: 50px;
   height: 50px;
   border: 1px solid rgba(153, 153, 153, 0.2);
@@ -650,49 +650,79 @@ header .hero_background .rotate_content #rotate_text span {
   cursor: pointer;
   top: 94% !important;
 }
-.home_main .carousel_container .swiper-button-prev {
+.carousel_container .swiper-button-prev {
   background-image: url("../assets/left.png") !important;
   right: 70px !important;
   left: unset !important;
 }
 @media (max-width: 650px) {
-  .home_main .carousel_container .swiper-button-prev {
+  .carousel_container .swiper-button-prev {
     right: unset !important;
     left: 25% !important;
   }
 }
-.home_main .carousel_container .swiper-button-next {
+.carousel_container .swiper-button-next {
   background-image: url("../assets/right.png") !important;
 }
 @media (max-width: 650px) {
-  .home_main .carousel_container .swiper-button-next {
+  .carousel_container .swiper-button-next {
     right: unset !important;
     left: 60% !important;
   }
 }
-.home_main .carousel_container .swiper-pagination-custom {
+.carousel_container .swiper-pagination-custom {
   width: -moz-fit-content;
   width: fit-content;
   top: 92% !important;
   left: 0 !important;
 }
 @media (max-width: 650px) {
-  .home_main .carousel_container .swiper-pagination-custom {
+  .carousel_container .swiper-pagination-custom {
     top: 93% !important;
     left: 50% !important;
     transform: translateX(-50%);
   }
 }
-.home_main .carousel_container .secondary_btn {
+.carousel_container .secondary_btn {
   display: none;
 }
 @media (max-width: 650px) {
-  .home_main .carousel_container .secondary_btn {
+  .carousel_container .secondary_btn {
     display: block;
     text-align: center;
   }
 }
-.home_main .carousel_container hr {
+.carousel_container hr {
   border: 1px solid rgba(153, 153, 153, 0.2);
   margin-top: 2rem;
+}
+
+.testimonials_section .secondary_btn {
+  margin-top: 1rem;
+}
+.testimonials_section .testimonial_item .ratings {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+.testimonials_section .testimonial_item .ratings img {
+  width: 30px;
+}
+.testimonials_section .testimonial_item .profile_container {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.testimonials_section .testimonial_item .profile_container .img_container {
+  width: 60px !important;
+  height: 60px !important;
+  overflow: hidden !important;
+  border-radius: 50%;
+}
+.testimonials_section .testimonial_item .profile_container .text_content {
+  margin-left: 1rem;
+}
+.testimonials_section .testimonial_item .profile_container .text_content p {
+  margin: 0 !important;
+  font-size: 0.9rem;
 }/*# sourceMappingURL=index.css.map */
