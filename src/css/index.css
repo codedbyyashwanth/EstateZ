@@ -848,4 +848,84 @@ footer .footer_info .foot_container .icon_container {
 }
 footer .footer_info .foot_container .icon_container img {
   width: 45px;
+}
+
+.about_hero_bg {
+  width: 100%;
+}
+.about_hero_bg .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 80vh;
+}
+@media (max-width: 900px) {
+  .about_hero_bg .container {
+    flex-direction: column-reverse;
+  }
+  .about_hero_bg .container .left_container, .about_hero_bg .container .right_container {
+    margin-top: 3rem;
+    width: 100% !important;
+  }
+  .about_hero_bg .container .right_container {
+    margin-top: 2rem !important;
+  }
+}
+.about_hero_bg .container .left_container {
+  width: 46%;
+}
+.about_hero_bg .container .counter_section {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  align-items: center;
+  gap: 20px;
+  margin-top: 4rem;
+}
+.about_hero_bg .container .counter_section .items {
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  padding: 1rem 1rem;
+  background-color: #1A1A1A;
+  border-radius: 12px;
+}
+.about_hero_bg .container .counter_section .items .count {
+  font-size: 2rem;
+}
+@media (max-width: 800px) {
+  .about_hero_bg .container .counter_section {
+    width: 100% !important;
+    gap: 10px;
+    grid-template-areas: "item1 item2" "item3 item3";
+    margin-top: 2rem !important;
+  }
+  .about_hero_bg .container .counter_section .items:nth-child(1) {
+    grid-area: item1;
+  }
+  .about_hero_bg .container .counter_section .items:nth-child(2) {
+    grid-area: item2;
+  }
+  .about_hero_bg .container .counter_section .items:nth-child(3) {
+    grid-area: item3;
+  }
+  .about_hero_bg .container .counter_section .text {
+    font-size: 0.8rem !important;
+  }
+}
+@media (max-width: 600px) {
+  .about_hero_bg .container .counter_section .items {
+    text-align: center !important;
+  }
+}
+.about_hero_bg .container .right_container {
+  width: 50%;
+  border: 1px solid rgba(153, 153, 153, 0.2);
+  border-radius: 10px;
+  background: linear-gradient(to right, rgba(20, 20, 20, 0.8), rgba(20, 20, 20, 0.6)), url("../assets/abstract.png");
+  background-size: cover;
+  background-position: center;
+}
+.about_hero_bg .container .right_container .img_container img {
+  width: 100%;
+  opacity: 1 !important;
 }/*# sourceMappingURL=index.css.map */

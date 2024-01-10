@@ -622,3 +622,106 @@ footer {
             }
       }
 }
+
+
+.about_hero_bg {
+      width: 100%;
+
+      .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            min-height: 80vh;
+
+            @media (max-width:900px) {
+                  flex-direction: column-reverse;
+
+                  .left_container, .right_container {
+                        margin-top: 3rem;
+                        width: 100% !important;
+                  }
+
+                  .right_container {
+                        margin-top: 2rem !important;
+                  }
+            }
+
+            .left_container {
+                  width: 46%;
+            }
+
+            .counter_section {
+                  width: 90%;
+                  display: grid;
+                  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                  align-items: center;
+                  gap: 20px;
+                  margin-top: 4rem;
+
+                  .items {
+                        border: $border;
+                        padding: 1rem 1rem;
+                        background-color: $secondary-color;
+                        border-radius: 12px;
+
+                        .count {
+                              font-size: 2rem;
+                        }
+                  }
+            }
+
+            @media (max-width:800px) {
+                  .counter_section {
+                        width: 100% !important;
+                        gap: 10px;
+                        grid-template-areas: 
+                        "item1 item2"
+                        "item3 item3";
+                        margin-top: 2rem !important;
+
+                        .items:nth-child(1) {
+                              grid-area: item1;
+                        }
+
+                        .items:nth-child(2) {
+                              grid-area: item2;
+                        }
+
+                        .items:nth-child(3) {
+                              grid-area: item3;
+                        }
+
+                        .text {
+                              font-size: 0.8rem !important;
+                        }
+                  }
+            }
+
+            @media (max-width:600px) {
+                  .counter_section {
+                        .items {
+                              text-align: center !important;
+                        }
+                  }
+            }
+
+            .right_container {
+                  width: 50%;
+                  border: $border;
+                  border-radius: 10px;
+                  background: linear-gradient(to right, rgba($primary-color, 0.8), rgba($primary-color,0.6)), url("../assets/abstract.png");
+                  background-size: cover;
+                  background-position: center;
+
+
+                  .img_container {
+
+                        img {
+                              width: 100%;
+                              opacity: 1 !important;
+                        }
+                  }
+            }
+      }
+}
