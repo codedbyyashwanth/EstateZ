@@ -6,6 +6,9 @@ import OurValues from "../components/About/OurValues";
 import Achievements from "../components/About/Achievements";
 import Features from "../components/About/Features";
 import Team from "../components/About/Team";
+import Clients from "../components/About/Clients";
+import CalltoAction from "../components/CalltoAction";
+import Footer from "../components/Footer";
 
 
 const About:FC = () => {
@@ -20,8 +23,10 @@ const About:FC = () => {
                   <Achievements />
                   <Features />
                   <Team />
+                  <Clients />
+                  <CalltoAction />
             </main>
-            <footer></footer>
+            <Footer />
       </>
 }
 

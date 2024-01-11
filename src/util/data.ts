@@ -1,4 +1,4 @@
-import { RealEstateProperty, Testimonial, FAQ } from "./PropTypes";
+import { RealEstateProperty, Testimonial, FAQ, ValuedClient } from "./PropTypes";
     
 const realEstateProperties: RealEstateProperty[] = [
       {
@@ -237,8 +237,48 @@ const realEstateFAQs: FAQ[] = [
       },
 ];
 
+const valuedClients: ValuedClient[] = [
+      {
+        year: 2018,
+        domain: "Corporation Real Estate",
+        category: "Luxury Home Department",
+        testimonial: "Working with this real estate agency has been a game-changer for our Luxury Home Department. Their expertise and dedication to client satisfaction have exceeded our expectations.",
+      },
+      {
+        year: 2019,
+        domain: "Investment Holdings",
+        category: "Commercial Properties",
+        testimonial: "Our partnership with this real estate firm in managing and expanding our commercial property portfolio has been instrumental in our success. Their strategic insights are invaluable.",
+      },
+      {
+        year: 2020,
+        domain: "Residential Development Group",
+        category: "New Housing Projects",
+        testimonial: "The real estate experts played a pivotal role in the success of our new housing projects. Their market analysis and innovative solutions have set our developments apart in the industry.",
+      },
+      {
+        year: 2021,
+        domain: "Hospitality Enterprises",
+        category: "Resort Properties",
+        testimonial: "As a client in the hospitality sector, we appreciate the real estate agency's commitment to finding picturesque resort properties. Their attention to detail aligns perfectly with our brand standards.",
+      },
+      {
+        year: 2022,
+        domain: "Technology Park Management",
+        category: "Corporate Real Estate",
+        testimonial: "Our experience with this real estate agency in managing our technology park's corporate real estate has been exceptional. Their proactive approach and efficiency have significantly enhanced our operations.",
+      },
+      {
+        year: 2023,
+        domain: "Global Retail Chains",
+        category: "Retail Space Acquisition",
+        testimonial: "Securing retail spaces across the globe has been seamless with the support of this real estate team. Their global network and market insights have been crucial to our expansion strategy.",
+      },
+    ];
+
 export {
       realEstateProperties,
       testimonials,
-      realEstateFAQs
+      realEstateFAQs,
+      valuedClients
 };

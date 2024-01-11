@@ -806,3 +806,238 @@ header .hero_background {
             }
       }
 }
+
+.about_main .team {
+      .team_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 50px;
+
+            @media (max-width:600px) {
+                  gap: 20px;
+
+                  .items {
+                        .text_content {
+                              margin-top: -15px !important;
+                        }
+
+                        .img_container {
+                              .icon_container {
+                                    transform: translateY(-25px) !important;
+                                    opacity: 1 !important;
+                              }
+                        }
+                  }
+            }
+
+            .items {
+                  padding: 20px;
+                  border: $border;
+                  border-radius: 20px;
+
+                  .img_container {
+                        img {
+                              width: 100%;
+                              border-radius: 10px;
+                        }
+      
+                        .icon_container {
+                              width: 70px;
+                              height: 45px;
+                              display: grid;
+                              place-content: center;
+                              padding: 10px 0;
+                              border-radius: 30px;
+                              background-color: $accent-color;
+                              margin: 0 auto;
+                              opacity: 0;
+                              transition: ease 0.4s;
+                              
+                              img {
+                                    width: 30px;
+                              }
+                        }
+                  }
+
+                  .text_content {
+                        text-align: center;
+                        margin-top: -10px;
+
+                        h3 {
+                              font-size: 1.3rem;
+                              font-weight: 500;
+                        }
+
+                        p {
+                              font-weight: 500;
+                              margin: 5px 0 0 0 !important;
+                        }
+
+                        .input_group {
+                              width: 100%;
+                              display: flex;
+                              justify-content: space-between;
+                              align-items: center;
+                              padding: 0 10px;
+                              margin-top: 1rem;
+                              border: $border;
+                              background-color: $secondary-color;
+                              padding: 10px 1rem;
+                              border-radius: 30px;
+
+                              input {
+                                    border: none;
+                                    outline: none;
+                                    background: transparent;
+                                    font-size: 1rem;
+                                    color: #fafafa;
+                              }
+
+                              .icon_container {
+                                    width: 40px;
+                                    height: 40px;
+                                    background-color: $accent-color;
+                                    border-radius: 50%;
+                                    display: grid;
+                                    place-content: center;
+                                    cursor: pointer;
+
+                                    span {
+                                          transition: ease 0.4s;
+                                          font-weight: 600;
+                                    }
+                              }
+
+                              &:hover span {
+                                    transform: rotate(-45deg);
+                              }
+                        }
+                  }
+
+                  &:hover .img_container .icon_container{
+                        transform: translateY(-25px);
+                        opacity: 1;
+                        cursor: pointer;
+                  }
+            }
+      }
+}
+
+
+.about_main .carousel_container {
+
+      .swiper-slide {
+            padding: 0 !important;
+            border: 10px solid $secondary-color;
+      }
+
+      .clients_item {
+            border: $border;
+            padding: 2rem;
+            border-radius: 10px;
+
+            @media (max-width:600px) {
+                  padding: 1rem;
+
+                  .head_text {
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        .secondary_btn {
+                              margin-top: 1rem;
+                              width: 100%;
+                              text-align: center;
+                        }
+                  }
+
+                  .info_content {
+                        gap: 10px;
+                  }
+
+                  .info {
+
+                        h4 {
+                              font-size: 0.9rem !important;
+                        }
+                  }
+
+                  .comment {
+                        margin: 0 !important;
+                        margin-top: 1rem !important;
+
+                        p:nth-child(2) {
+                              font-size: 0.9rem;
+                        }
+                  }
+            }
+
+            .head_text {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+
+                  h2 {
+                        font-weight: 500;
+                  }
+
+                  .text {
+                        margin: 0 !important;
+                        margin-bottom: 10px;
+                  }
+            }
+
+            .secondary_btn {
+                  display: inline-block !important;
+            }
+      }
+
+      .clients_item {
+            .info_content {
+                  display: flex;
+                  justify-content: space-between;
+                  margin-top: 3rem;
+                  
+
+                  .info {
+                        .text {
+                              display: flex;
+                              align-items: center;
+
+                              span:nth-child(1) {
+                                    font-size: 1.2rem;
+                              }
+
+                              span {
+                                    margin-right: 5px;
+                              }
+                        }
+
+                        h4 {
+                              font-weight: 500;
+                              margin-top: 10px;
+                              font-size: 1.1rem;
+                        }
+                  }
+
+                  .text {
+                        margin: 0 !important;
+                  }
+            }
+
+            .comment {
+                  margin: 3rem 1rem 1rem 0;
+                  padding: 1rem;
+                  border: $border;
+                  border-radius: 10px;
+
+                  .text {
+                        margin: 0 !important;
+                  }
+
+                  p:nth-child(2) {
+                        margin-top: 10px;
+                        line-height: 25px;
+                  }
+            }
+      }
+}

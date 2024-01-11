@@ -29,3 +29,10 @@ export type FAQ = {
       question: string;
       answer: string;
 };
+
+export type ValuedClient = {
+      year: number;
+      domain: string;
+      category: string;
+      testimonial: string;
+};

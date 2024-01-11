@@ -17,7 +17,7 @@ const Team = () => {
                                     <div className="img_container">
                                           <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                                           <div className="icon_container">
-                                                <img src="/icon.png" alt="" />
+                                                <img src="/Icon.png" alt="" />
                                           </div>
                                     </div>
                                     <div className="text_content">
@@ -27,7 +27,7 @@ const Team = () => {
                                                 <input type="text" placeholder="Say Hello 👋" />
                                                 <div className="icon_container">
                                                 <span className="material-symbols-outlined">
-                                                send
+                                                arrow_right_alt
                                                 </span>
                                                 </div>
                                           </div>
@@ -37,7 +37,7 @@ const Team = () => {
                                     <div className="img_container">
                                           <img src="https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?q=80&w=1741&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                                           <div className="icon_container">
-                                                <img src="/icon.png" alt="" />
+                                                <img src="/Icon.png" alt="" />
                                           </div>
                                     </div>
                                     <div className="text_content">
@@ -47,7 +47,7 @@ const Team = () => {
                                                 <input type="text"  placeholder="Say Hello 👋"/>
                                                 <div className="icon_container">
                                                 <span className="material-symbols-outlined">
-                                                send
+                                                arrow_right_alt
                                                 </span>
                                                 </div>
                                           </div>
@@ -57,7 +57,7 @@ const Team = () => {
                                     <div className="img_container">
                                           <img src="https://images.unsplash.com/photo-1496345875659-11f7dd282d1d?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                                           <div className="icon_container">
-                                                <img src="/icon.png" alt="" />
+                                                <img src="/Icon.png" alt="" />
                                           </div>
                                     </div>
                                     <div className="text_content">
@@ -67,7 +67,7 @@ const Team = () => {
                                                 <input type="text" placeholder="Say Hello 👋" />
                                                 <div className="icon_container">
                                                 <span className="material-symbols-outlined">
-                                                send
+                                                arrow_right_alt
                                                 </span>
                                                 </div>
                                           </div>
@@ -77,7 +77,7 @@ const Team = () => {
                                     <div className="img_container">
                                           <img src="https://images.unsplash.com/photo-1621903570450-b6750dce9350?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
                                           <div className="icon_container">
-                                                <img src="/icon.png" alt="" />
+                                                <img src="/Icon.png" alt="" />
                                           </div>
                                     </div>
                                     <div className="text_content">
@@ -87,7 +87,7 @@ const Team = () => {
                                                 <input type="text"  placeholder="Say Hello 👋"/>
                                                 <div className="icon_container">
                                                 <span className="material-symbols-outlined">
-                                                send
+                                                arrow_right_alt
                                                 </span>
                                                 </div>
                                           </div>
