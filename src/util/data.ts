@@ -1,4 +1,4 @@
-import { RealEstateProperty, Testimonial, FAQ, ValuedClient } from "./PropTypes";
+import { RealEstateProperty, Testimonial, FAQ, ValuedClient, PriceRange, PropertySizeRange } from "./PropTypes";
     
 const realEstateProperties: RealEstateProperty[] = [
       {
@@ -274,11 +274,92 @@ const valuedClients: ValuedClient[] = [
         category: "Retail Space Acquisition",
         testimonial: "Securing retail spaces across the globe has been seamless with the support of this real estate team. Their global network and market insights have been crucial to our expansion strategy.",
       },
-    ];
+];
+
+const majorCitiesInIndia: string[] = [
+      "Mumbai",
+      "Delhi",
+      "Bangalore",
+      "Chennai",
+      "Kolkata",
+      "Hyderabad",
+      "Ahmedabad",
+      "Pune",
+      "Jaipur",
+      "Lucknow",
+];
+
+const bathRoom = ["2", "3", "1", "4", "2"];
+const bedRoom = ["4", "2", "5", "3", "1"];
+
+    
+const propertyTypesInIndia = ["Residence","Apartment", "Villa", "Commercial"];
+
+const priceRanges: PriceRange[] = [
+      {
+            range: 1,
+            minPrice: 50000,
+            maxPrice: 150000,
+          },
+          {
+            range: 2,
+            minPrice: 150001,
+            maxPrice: 300000,
+          },
+          {
+            range: 3,
+            minPrice: 300001,
+            maxPrice: 500000,
+          },
+          {
+            range: 4,
+            minPrice: 500001,
+            maxPrice: 750000,
+          },
+          {
+            range: 5,
+            minPrice: 750001,
+            maxPrice: 1000000,
+      },
+];
+
+const propertySizeRanges: PropertySizeRange[] = [
+      {
+        range: 1,
+        minSize: 500, // in square feet
+        maxSize: 1500,
+      },
+      {
+        range: 2,
+        minSize: 1000,
+        maxSize: 2500,
+      },
+      {
+        range: 3,
+        minSize: 1500,
+        maxSize: 3500,
+      },
+      {
+        range: 4,
+        minSize: 2000,
+        maxSize: 5000,
+      },
+      {
+        range: 5,
+        minSize: 3000,
+        maxSize: 8000,
+      },
+];
 
 export {
       realEstateProperties,
       testimonials,
       realEstateFAQs,
-      valuedClients
+      valuedClients,
+      majorCitiesInIndia,
+      propertyTypesInIndia,
+      priceRanges,
+      propertySizeRanges,
+      bathRoom,
+      bedRoom
 };

@@ -36,3 +36,26 @@ export type ValuedClient = {
       category: string;
       testimonial: string;
 };
+
+export type PriceRange = {
+      range: number;
+      minPrice: number;
+      maxPrice: number;
+};
+
+export type PropertySizeRange = {
+      range: number;
+      minSize: number;
+      maxSize: number;
+};
+
+export type InputType = {
+      label: string;
+      placeholder: string;
+};
+
+export type DropdownInputType = {
+      label: string;
+      placeholder: string;
+      data: string[];
+};
