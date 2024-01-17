@@ -1,6 +1,7 @@
 import HeadTitle from "../HeadTitle";
 import { HeadingPropes } from "../../util/PropTypes";
 import FormSection from "../FormSection";
+import Submission from "../Submit";
 
 const ReachOut = () => {
       const headData:HeadingPropes = {
@@ -13,13 +14,7 @@ const ReachOut = () => {
                   <div className="container">
                         <HeadTitle heading={headData.heading} text={headData.text} buttonText="" />
                         <FormSection />
-                        <div className="submission">
-                              <p>
-                                    <input type="checkbox" />
-                                    <span>I agree with Terms of Use and Privacy Policy</span>
-                              </p>
-                              <a href="#" className="primary_btn">Send your Message</a>
-                        </div>
+                        <Submission />
                   </div>
             </section>
       )

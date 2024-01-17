@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
       return (
@@ -9,7 +9,7 @@ const Footer = () => {
                               <h3 className="logo">Estate<span>Z</span></h3>
                         </div>
                         <div className="link_container">
-                              <a href="./index.html">Home</a><a href="./pages/Careers.html">About Us</a><a href="./pages/About.html">Propertes</a><a href="./pages/Security.html">Servces</a>
+                              <Link to="/">Home</Link><Link to="/about">About Us</Link><Link to="/properties">Propertes</Link><Link to="services">Services</Link>
                         </div>
                         <div className="info_container">
                               <div className="items">

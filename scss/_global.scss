@@ -567,3 +567,114 @@ footer {
             }
       }
 }
+
+.submission {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+
+      p {
+            color: rgba($white-color,0.8);
+            display: flex;
+            align-items: center;
+      }
+
+      input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            border: $border;
+            border-radius: 5px;
+            background-color: $secondary-color;
+            accent-color: $accent-color !important;
+            background-color: $secondary-color !important;
+      }
+
+      @media (max-width:600px) {
+            flex-direction: column;
+            justify-content: center;
+
+            a {
+                  width: 100%;
+                  text-align: center;
+                  margin-top: 1rem;
+            }
+      }
+}
+
+
+.features_section {
+      padding: 10px;
+      background-color: $secondary-color;
+      width: 100%;
+
+      .features {
+            display: grid;
+            gap: 20px;
+            padding: 10px;
+            background-color: $primary-color;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+
+            @media (max-width:600px) {
+                  gap: 5px;
+                  padding: 6px;
+                  border: $border;
+                  border-radius: 14px;
+
+                  .items {
+                        padding: 2rem 8px !important;
+
+                        h3 {
+                              font-size: 0.9rem !important;
+                        }
+                  }
+            }
+
+            .items {
+                  padding: 2rem 1rem;
+                  text-align: center;
+                  border-radius: 10px;
+                  border: $border;
+                  background-color: $secondary-color;
+                  position: relative;
+
+                  .icon_container {
+                        width: 70px;
+                        height: 70px;
+                        display: grid;
+                        place-items: center;
+                        margin: 0 auto;
+
+                        img {
+                              width: 100%;
+                        }
+                  }
+
+                  h3 {
+                        font-weight: 500;
+                        font-size: 1rem;
+                        margin-top: 1rem;
+                  }
+
+                  .arrow_link {
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        color: rgba($white-color,0.6);
+                        cursor: pointer;
+
+                        span {
+                              user-select: none;
+                              transition: transform ease 0.4s;
+                        }
+
+                        &:hover span {
+                              transform: scale(1.1) translate(3px,-3px);
+                              color: $accent-color;
+                        }
+                  }
+            }
+      }
+}
