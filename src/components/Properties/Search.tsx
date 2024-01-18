@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { majorCitiesInIndia,propertyTypesInIndia, priceRanges, propertySizeRanges } from "../../util/data";
 
 const Search = () => {
@@ -14,12 +15,16 @@ const Search = () => {
                               <div className="search_container">
                                     <div className="search_group">
                                           <input type="text" placeholder="Search For A Property" />
+                                          <Link to="/properties/11">
                                           <button className="primary_btn">
                                           <span className="material-symbols-outlined">
                                           search
                                           </span>
-                                                <span>Find Property</span>
+                                                <span style={{ fontSize: "1.1rem" }}>
+                                                      Find Property
+                                                </span>
                                           </button>
+                                          </Link>
                                     </div>
                               </div>
                               <div className="filter_container">

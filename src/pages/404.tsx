@@ -9,8 +9,10 @@ const NotFound:FC = () => {
                   <Banner />
                   <Navbar isActive="404" />
             </header>
-            <main className="404-main">
-                  <h1>404</h1>
+            <main className="Not_main">
+                  <div className="gif">
+                  <dotlottie-player src="https://lottie.host/ce0059f9-c934-4ee1-8c6f-48c3019d2ae5/e57VG23k7g.json" background="transparent" speed="1"  loop autoplay></dotlottie-player>
+                  </div>
             </main>
             <footer></footer>
       </>

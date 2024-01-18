@@ -678,3 +678,106 @@ footer {
             }
       }
 }
+
+.image_carousel_container {
+      border: $border;
+      border-radius: 12px;
+      padding: 2.2rem;
+      margin-top: 2.4rem;
+
+      @media (max-width:600px) {
+            padding: 1rem !important;
+
+            .thumbs {
+                  .swiper-slide {
+                        width: 25% !important;
+                        height: 100% !important;
+                  }
+            }
+      }
+
+      .thumbs {
+            padding: 1rem;
+            border: $border;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+
+            .swiper-slide {
+                  width: 200px !important;
+                  height: 100px !important;
+                  border-radius: 10px;
+                  overflow: hidden;
+            }
+      }
+
+      .main_swiper {
+            padding-bottom: 5rem;
+
+            .swiper-slide {
+                  border-radius: 10px;
+                  overflow: hidden;
+                  user-select: none;
+
+                  img {
+                        user-select: none;
+                  }
+            }
+
+            .swiper-button-next::after, .swiper-button-prev::after {
+                  content: "";
+            }
+      
+            .swiper-button-next, .swiper-button-prev {
+                  width: 50px;
+                  height: 50px;
+                  border: $border;
+                  border-radius: 50%;
+                  background-color: $primary-color;
+                  background-size: 25px;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  cursor: pointer;
+                  top: 94% !important;
+            }
+      
+            .swiper-button-prev {
+                  background-image: url("../assets/left.png") !important;
+                  // right: 70px !important;
+                  // left: 41% !important;
+
+                  right: 70px !important;
+                  left: unset !important;
+      
+                  @media (max-width:650px) {
+                        right: unset !important;
+                        left: 22% !important;
+                        top: 92% !important;
+                  }
+            }
+      
+            .swiper-button-next {
+                  background-image: url("../assets/right.png") !important;
+                  // left: 55%;
+      
+                  @media (max-width:650px) {
+                        right: unset !important;
+                        left: 60% !important;
+                        top: 92% !important;
+                  }
+            }
+
+            .swiper-pagination-custom {
+                  width: fit-content;
+                  top: 92% !important;
+                  left: 0 !important;
+      
+      
+                  @media (max-width:650px) {
+                        top: 90% !important;
+                        left: 50% !important;
+                        transform: translateX(-50%);
+                  }
+            }
+
+      }
+}
