@@ -6,7 +6,7 @@ import { testimonials } from '../../util/data';
 const Testimonials = () => {
       const data:HeadingPropes = {
             heading: "What Our Clients Say",
-            text: "Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.",
+            text: "Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose EstateZ for their real estate needs.",
             buttonText: "View All Testimonials"
       }
       

@@ -6,7 +6,7 @@ import { valuedClients } from "../../util/data";
 const Clients = () => {
       const headData:HeadingPropes = {
             heading: "Our Valued Clients",
-            text: "At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving",
+            text: "At EstateZ, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we've had the pleasure of serving",
             buttonText: ""
       }
 

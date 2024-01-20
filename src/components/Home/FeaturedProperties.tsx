@@ -6,7 +6,7 @@ import { realEstateProperties } from '../../util/data';
 const FeaturedProperties = () => {
       const data:HeadingPropes = {
             heading: "Featured Properties",
-            text: "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through Estatein. Click 'View Details' for more information.",
+            text: "Explore our handpicked selection of featured properties. Each listing offers a glimpse into exceptional homes and investments available through EstateZ. Click 'View Details' for more information.",
             buttonText: "View All Properties"
       }
       

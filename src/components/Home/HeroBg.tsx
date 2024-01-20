@@ -8,7 +8,7 @@ const HeroBg = () => {
                   <div className="container">
                         <div className="left_container">
                               <div className="text_container">
-                                    <h1 className="h1">Discover Your Dream Property with Estatein</h1>
+                                    <h1 className="h1">Discover Your Dream Property with EstateZ</h1>
                                     <p className="text">
                                           Your journey to finding the perfect property begins here. Explore our listings to find the home that matches your dreams.
                                     </p>

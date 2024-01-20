@@ -6,7 +6,7 @@ import { realEstateFAQs } from '../../util/data';
 const FAQs = () => {
       const data:HeadingPropes = {
             heading: "Frequently Asked Questions",
-            text: "Find answers to common questions about Estatein's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.",
+            text: "Find answers to common questions about EstateZ's services, property listings, and the real estate process. We're here to provide clarity and assist you every step of the way.",
             buttonText: "View All FAQ's"
       }
       

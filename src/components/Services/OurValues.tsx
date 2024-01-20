@@ -8,7 +8,7 @@ const OurValues = () => {
                               <div className="heading_container">
                                     <div className="text_content">
                                           <h1 className="h2">Smart Investments, Informed Decisions</h1>
-                                          <p className="text">Building a real estate portfolio requires a strategic approach. Estatein's Investment Advisory Service empowers you to make smart investments and informed decisions.</p>
+                                          <p className="text">Building a real estate portfolio requires a strategic approach. EstateZ's Investment Advisory Service empowers you to make smart investments and informed decisions.</p>
                                     </div>
 
                                     <div className="pattern_content">

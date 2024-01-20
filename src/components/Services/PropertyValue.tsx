@@ -4,13 +4,13 @@ import { HeadingPropes } from "../../util/PropTypes";
 const PropertyValue = () => {
       const headData1:HeadingPropes = {
             heading: "Unlock Property Value",
-            text: "Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey",
+            text: "Selling your property should be a rewarding experience, and at EstateZ, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey",
             buttonText: ""
       }
 
       const headData2:HeadingPropes = {
             heading: "Effortless Property Management",
-            text: "Owning a property should be a pleasure, not a hassle. Estatein's Property Management Service takes the stress out of property ownership, offering comprehensive solutions tailored to your needs. Explore the categories below to see how we can make property management effortless for you",
+            text: "Owning a property should be a pleasure, not a hassle. EstateZ's Property Management Service takes the stress out of property ownership, offering comprehensive solutions tailored to your needs. Explore the categories below to see how we can make property management effortless for you",
             buttonText: ""
       }
 
