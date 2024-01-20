@@ -21,7 +21,7 @@ const TestimonialsCarousel = (props: { testimonials: Testimonial[]}) => {
                         navigation={true}
                         pagination={{
                               type: 'custom',
-                              renderCustom: function (swiper, current, total) {
+                              renderCustom: function (_swiper, current, total) {
                                     return `<span>${current}</span><span style="color:#919191; margin:0 2px 0 4px;">of ${total}</span>`; 
                               }
                         }}

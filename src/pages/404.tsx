@@ -11,7 +11,7 @@ const NotFound:FC = () => {
             </header>
             <main className="Not_main">
                   <div className="gif">
-                  <dotlottie-player src="https://lottie.host/ce0059f9-c934-4ee1-8c6f-48c3019d2ae5/e57VG23k7g.json" background="transparent" speed="1"  loop autoplay></dotlottie-player>
+                        <h1>404 - Page Not Found</h1>
                   </div>
             </main>
             <footer></footer>
