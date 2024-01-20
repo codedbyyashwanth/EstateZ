@@ -1,4 +1,8 @@
 import Banner from "../components/Banner";
+import CalltoAction from "../components/CalltoAction";
+import Footer from "../components/Footer";
+import FAQs from "../components/Home/FAQ";
+import FeaturedProperties from "../components/Home/FeaturedProperties";
 import Navbar from "../components/Navbar";
 import HeroSection from "../components/Properties/Property/HeroSection";
 
@@ -10,10 +14,15 @@ const Property = () => {
                         <Banner />
                         <Navbar isActive="properties" />
                   </header>
-                  <main className="property_main">
-                        <HeroSection />
+                  <main className="">
+                        <section className="property_main">
+                              <HeroSection />
+                        </section>
+                        <FeaturedProperties />
+                        <FAQs />
+                        <CalltoAction />
                   </main>
-                  <footer></footer>
+                  <Footer />
             </>
       )
 }
